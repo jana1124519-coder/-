@@ -1,0 +1,203 @@
+import type { Scenario } from "./parentScenarios";
+
+export const EXTRA_PARENT_SCENARIOS: Scenario[] = [
+  {
+    id: "screen-addiction",
+    ar: {
+      title: "إدمان الشاشات والموبايل",
+      problem: "طفلك ملتصق بالموبايل/التابلت، ويصرخ ويغضب لو أخدتيه منه.",
+      steps: [
+        "لا تأخذي الجهاز فجأة — اعملي خطة تدريجية: قللي 15 دقيقة كل أسبوع.",
+        "حدّدي أوقات بدون شاشات (قبل النوم بساعة، أثناء الأكل، الصباح).",
+        "اقترحي بدائل ممتعة: لعبة جماعية، رسم، رياضة، مشي.",
+        "كوني قدوة — لا تستخدمي موبايلك أمامه أثناء وقت الأسرة.",
+        "افتحي حوار: 'إيه أكتر حاجة بتحبها في اللعبة؟' (يوريك احتياجاته العاطفية).",
+        "استخدمي إعدادات Screen Time / Family Link لتفعيل حدود الوقت تلقائياً.",
+      ],
+      phrases: [
+        "'أنا فاهمة إن اللعبة دي ممتعة، بس مخك محتاج راحة.'",
+        "'هنلعب الجهاز نص ساعة، وبعدين نخرج نلعب كرة.'",
+        "'مش عقاب، ده اهتمام بصحتك.'",
+      ],
+      whenAsk: "إذا لاحظتي اكتئاب، عزلة كاملة، تراجع دراسي حاد، أو نوبات غضب شديدة عند المنع، اطلب أخصائي نفسي للأطفال.",
+    },
+    en: {
+      title: "Screen / phone addiction",
+      problem: "Child glued to phone/tablet, screams and rages if you take it away.",
+      steps: [
+        "Don't remove suddenly — gradual plan: reduce 15 min/week.",
+        "Set screen-free zones (1h before bed, meals, mornings).",
+        "Offer fun alternatives: family games, art, sport, walks.",
+        "Model it — don't use your phone during family time.",
+        "Open dialogue: 'What do you love most about the game?' to learn the unmet need.",
+        "Use Screen Time / Family Link for automatic limits.",
+      ],
+      phrases: [
+        "'I get that this game is fun — but your brain needs rest.'",
+        "'You'll play 30 min, then we'll go play football.'",
+        "'This isn't punishment — it's care for your health.'",
+      ],
+      whenAsk: "If you notice depression, total isolation, dropping grades, or rage at limits, see a child psychologist.",
+    },
+  },
+  {
+    id: "bullied-at-school",
+    ar: {
+      title: "طفلك يتعرّض للتنمر في المدرسة",
+      problem: "بدأ يرفض الذهاب للمدرسة، يبكي صباحاً، أو رجع بكدمات / متعلقات مكسورة.",
+      steps: [
+        "اسمعيه بدون مقاطعة. لا تقولي 'تجاهله' أو 'دافع عن نفسك' — هذا يقلل ثقته.",
+        "اعرفي التفاصيل: مَن، أين، متى، كم مرة. خذي ملاحظات.",
+        "تواصلي مع المدرس/الأخصائي الاجتماعي بوضوح وكتابياً (ايميل) لتوثيق.",
+        "علّميه عبارات حازمة: 'توقّف، مش عاجبني ده'، ثم يبتعد لمكان آمن.",
+        "علّميه استراتيجية الجسد المنتصب (ظهر مفرود، تواصل بصري، صوت ثابت).",
+        "ساعديه يبني صداقات: ادعي زميل للبيت، شجّعي أنشطة جماعية.",
+        "إذا لم يستجب المدرسة خلال أسبوع، صعّدي للإدارة كتابياً.",
+      ],
+      phrases: [
+        "'مش غلطتك. اللي بيتنمّر هو اللي عنده مشكلة.'",
+        "'أنا فخورة إنك حكيتلي. ده شجاعة.'",
+        "'إحنا فريق، هنحلها مع بعض.'",
+      ],
+      whenAsk: "أعراض اكتئاب، إيذاء ذاتي، رفض كامل للمدرسة لأكثر من أسبوع → طبيب نفسي أطفال + الإدارة المدرسية.",
+    },
+    en: {
+      title: "Your child is being bullied at school",
+      problem: "Refusing school, crying mornings, comes home with bruises or broken items.",
+      steps: [
+        "Listen without interruption. Don't say 'ignore them' or 'fight back' — this lowers their trust.",
+        "Get details: who, where, when, how often. Take notes.",
+        "Contact teacher/counselor in writing (email) for documentation.",
+        "Teach assertive lines: 'Stop, I don't like that', then walk to safe place.",
+        "Teach upright-body strategy (back straight, eye contact, steady voice).",
+        "Help them build friendships: invite a classmate over, encourage group activities.",
+        "If school doesn't act in a week, escalate in writing to administration.",
+      ],
+      phrases: [
+        "'It's not your fault. The bully has the problem.'",
+        "'I'm proud you told me. That took courage.'",
+        "'We're a team — we'll solve it together.'",
+      ],
+      whenAsk: "Depression, self-harm, refusing school >1 week → child psychiatrist + school escalation.",
+    },
+  },
+  {
+    id: "fear-doctors",
+    ar: {
+      title: "طفلك يخاف من الدكاترة والإبر",
+      problem: "كل زيارة للعيادة بكاء وصراخ ومحاولات هروب — والإبرة كابوس.",
+      steps: [
+        "اشرح الزيارة قبلها بوقت قصير (لا تخفيها). 'الدكتور هيكشف عليك ويعطيك إبرة صغيرة عشان تفضل قوي.'",
+        "لا تكذبي 'مفيش إبرة' — يفقد ثقته فيكِ نهائياً.",
+        "العبي معه دور الطبيب في البيت بدمية وسماعة.",
+        "خذي معك شيئاً مريحاً (دمية، بطانية).",
+        "اطلبي من الممرضة كريم تخدير موضعي (EMLA) قبل الإبرة بساعة.",
+        "تنفّس عميق معه: 'انفخ في البالون التخيلي ده'.",
+        "كافئيه بعد بمكافأة بسيطة معروفة سلفاً (ملصق، نزهة).",
+      ],
+      phrases: [
+        "'هتحس بقرصة صغيرة لمدة 3 ثواني فقط.'",
+        "'أنا معاك، إيدي في إيدك.'",
+        "'أنا فخورة إنك صبرت — ده بيخلّيك أقوى.'",
+      ],
+      whenAsk: "خوف شديد يمنع العلاج الضروري → استشيري طبيب نفسي للأطفال لتدريب على إزالة الحساسية.",
+    },
+    en: {
+      title: "Child fears doctors and needles",
+      problem: "Every visit = crying, screaming, escape attempts — needles are a nightmare.",
+      steps: [
+        "Explain shortly before (don't hide). 'The doctor will examine you and give a small shot to keep you strong.'",
+        "Never lie 'no needle' — destroys trust forever.",
+        "Play doctor at home with a doll and stethoscope.",
+        "Bring something comforting (toy, blanket).",
+        "Ask nurse for topical anesthetic (EMLA) 1h before injection.",
+        "Deep breathing together: 'Blow up this imaginary balloon.'",
+        "Reward after with a small pre-known reward (sticker, walk).",
+      ],
+      phrases: [
+        "'You'll feel a small pinch for just 3 seconds.'",
+        "'I'm right here, my hand is in yours.'",
+        "'I'm proud you were brave — it makes you stronger.'",
+      ],
+      whenAsk: "Severe phobia blocking necessary care → child psychologist for desensitization training.",
+    },
+  },
+  {
+    id: "puberty-talk",
+    ar: {
+      title: "الحديث عن البلوغ والتغيرات الجسدية",
+      problem: "طفلك على مشارف البلوغ ومحرج، أو بدأت التغيرات وانت لسه ما اتكلمتش معاه.",
+      steps: [
+        "ابدأ مبكر (8-10 سنين)، لا تنتظر سؤاله.",
+        "اختر وقت طبيعي (في السيارة، أثناء المشي) — أفضل من جلسة رسمية.",
+        "استخدم اسماء علمية صحيحة للأعضاء بدون خجل (هذا يحميه من التحرش).",
+        "اشرح الدورة الشهرية للبنات والاحتلام للأولاد كأشياء طبيعية صحية.",
+        "أكّد إن جسمه ملكه، لا أحد يحق له لمسه إلا للنظافة أو الفحص الطبي بحضورك.",
+        "افتح باب الأسئلة دائماً: 'لو سألت أي حاجة مش هحرج ولا هزعل'.",
+      ],
+      phrases: [
+        "'الجسم بيتغير، ده طبيعي وعلامة إنك بتكبر.'",
+        "'أنا كنت في عمرك واتغير عندي نفس الحاجات.'",
+        "'لو حسيت بحاجة غريبة احكيلي وهنروح للدكتور سوا.'",
+      ],
+      whenAsk: "تغيرات بلوغ قبل عمر 8 (بنات) أو 9 (أولاد) أو تأخر بعد 13/14 → طبيب أطفال غدد صماء.",
+    },
+    en: {
+      title: "Talking about puberty",
+      problem: "Child approaching/in puberty, embarrassed — or you haven't talked yet.",
+      steps: [
+        "Start early (8-10 years), don't wait for their question.",
+        "Pick a natural moment (car, walk) — better than a formal sit-down.",
+        "Use correct scientific names without shame — protects from abuse.",
+        "Explain menstruation (girls) and nocturnal emissions (boys) as normal/healthy.",
+        "Affirm body autonomy: no one touches except for hygiene or medical exam with you present.",
+        "Keep questions open: 'Ask anything, I won't be embarrassed or upset.'",
+      ],
+      phrases: [
+        "'Your body is changing — that's normal and a sign of growth.'",
+        "'I was your age and the same things changed with me.'",
+        "'If anything feels strange, tell me and we'll see the doctor together.'",
+      ],
+      whenAsk: "Puberty before 8 (girls) / 9 (boys) or delay past 13/14 → pediatric endocrinologist.",
+    },
+  },
+  {
+    id: "anxious-child",
+    ar: {
+      title: "طفلك قلِق ويخاف من حاجات كتير",
+      problem: "يخاف من النوم لوحده، الظلام، الأصوات، انفصالك عنه — أو لديه قلق عام.",
+      steps: [
+        "صدّق مشاعره — لا تستهزأ. 'فاهمة إنك خايف، ده إحساس صعب.'",
+        "علّمه التنفّس البطّي: 4 شهيق، 4 حبس، 6 زفير. كرر 4 مرات.",
+        "تقنية 5-4-3-2-1: 5 حاجات تشوفها، 4 تلمسها، 3 تسمعها، 2 تشمها، 1 تتذوّقها.",
+        "لا تتجنّب الموقف نهائياً (ده يقوّي القلق) — اقترب تدريجياً.",
+        "اقرأ معه قصص عن أبطال يخافون ويتغلّبون.",
+        "حافظ على روتين نوم ثابت (نفس الوقت، إضاءة خافتة، بدون شاشات).",
+      ],
+      phrases: [
+        "'مخك بيحاول يحميك، بس مفيش خطر دلوقتي.'",
+        "'أنا قريب منك، تقدر تنادي.'",
+        "'كل مرة تواجه خوفك، بتبقى أقوى.'",
+      ],
+      whenAsk: "قلق يمنعه من المدرسة، النوم، أو اللعب لأكثر من شهر → معالج CBT للأطفال.",
+    },
+    en: {
+      title: "Anxious child afraid of many things",
+      problem: "Fears sleeping alone, dark, noises, separation — or general anxiety.",
+      steps: [
+        "Validate feelings — don't mock. 'I see you're scared, that's hard.'",
+        "Teach slow breathing: 4 in, 4 hold, 6 out. Repeat 4 times.",
+        "5-4-3-2-1: 5 things to see, 4 to touch, 3 to hear, 2 to smell, 1 to taste.",
+        "Don't avoid the situation (strengthens anxiety) — gradual approach.",
+        "Read stories of heroes who feared and overcame.",
+        "Consistent bedtime routine (same time, dim light, no screens).",
+      ],
+      phrases: [
+        "'Your brain is trying to protect you, but there's no danger right now.'",
+        "'I'm near, you can call.'",
+        "'Every time you face fear, you grow stronger.'",
+      ],
+      whenAsk: "Anxiety blocks school, sleep, or play >1 month → child CBT therapist.",
+    },
+  },
+];
